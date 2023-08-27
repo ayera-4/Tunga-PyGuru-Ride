@@ -1,2 +1,2 @@
 # Tunga-PyGuru-Ride
- Revamping Python as Should
+ Exploring String manipulation
