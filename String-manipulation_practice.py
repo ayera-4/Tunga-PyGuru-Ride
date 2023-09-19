@@ -93,6 +93,7 @@ def word_occurrence(literal): # Number 8
 #input_sent = "Captain America is Captain of America"
 #print(word_occurrence(input_sent))
 
+
 def get_required_and_extra_fuel(distance): # Number 9
     min_fuel = 100
     required_fuel = distance * 10
@@ -104,6 +105,7 @@ def get_required_and_extra_fuel(distance): # Number 9
 #Test Output
 #test_distance = 0
 #print(get_required_and_extra_fuel(test_distance))
+
 
 def sums_even_and_odd(num_list): # Number 10
     even_sum = 0
@@ -118,6 +120,7 @@ def sums_even_and_odd(num_list): # Number 10
 #test_list = [51, 75, 69, 36, 75, 44, 82, 36]
 #print(sums_even_and_odd(test_list))
 
+
 def char_occurrence(literal): # Number 11
     char_list = []
     for char in literal.lower():
@@ -128,6 +131,7 @@ def char_occurrence(literal): # Number 11
 #Test Output
 #test_literal = "Nick Fury Hired Iron Man"
 #print(char_occurrence(test_literal))
+
 
 def is_abundant_number(number): # Number 12
     digit_sum = 0
@@ -141,6 +145,7 @@ def is_abundant_number(number): # Number 12
 #Test Output
 #number = 14
 #is_abundant_number(number)
+
 
 def is_sum_of_digits_equal(int1, int2): # Number 13
     int1_sum = 0
@@ -158,6 +163,7 @@ def is_sum_of_digits_equal(int1, int2): # Number 13
 #second_int = 900
 #print(is_sum_of_digits_equal(first_int, second_int))
 
+
 def repeat_vowels(literal, num): # Number 14
     vowels = ['a','e','i','o','u']
     new_literal = []
@@ -171,6 +177,7 @@ def repeat_vowels(literal, num): # Number 14
 #test_string = "banana"
 ##print(repeat_vowels(test_string, test_number))
 
+
 def count_digits_in_string(literal): # Number 15
     digit_count = 0
     for char in literal:
@@ -180,6 +187,7 @@ def count_digits_in_string(literal): # Number 15
 #Test Output
 #test_string = "Boys was released in 2019"
 #print(count_digits_in_string(test_string))
+
 
 def convert_camel_2_snake(literal): # Number 16
     if literal[0].islower() and "_" not in literal:
@@ -195,6 +203,7 @@ def convert_camel_2_snake(literal): # Number 16
 #Test Output
 #test_string = "helloworld"
 #print(convert_camel_2_snake(test_string))
+
 
 def is_lapindrome_number(num): # Number 17
     literal = str(num)
@@ -212,6 +221,7 @@ def is_lapindrome_number(num): # Number 17
 #Test Output
 #test_number = 1234321
 #print(is_lapindrome_number(test_number))
+
 
 def calculate_BMI(weight, height): # Number 18
     _BMI = round(weight/(height**2), 1)
@@ -240,6 +250,7 @@ def reverse_odd_long_words(literal): # Number 19
 #test_literal = "Learn to code from Programiz"
 #print(reverse_odd_long_words(test_literal))
 
+
 def ascending_squares(num_list): # Number 20
     square_list = [num**2 for num in num_list]
     square_list.sort()
@@ -247,6 +258,7 @@ def ascending_squares(num_list): # Number 20
 #Test Output
 #test_num_list = [-7,-2,0,4,5]
 #print(ascending_squares(test_num_list))
+
 
 def words_start_char(literal, char): # Number 21
     word_list = literal.split()
@@ -259,6 +271,7 @@ def words_start_char(literal, char): # Number 21
 #test_literal = "Doe went to Dubai"
 #test_char = 'd'
 #print(words_start_char(test_literal, test_char))
+
 
 def most_vowel_at_end(literal): # Number 22
     word_list = literal.split()
@@ -278,6 +291,7 @@ def most_vowel_at_end(literal): # Number 22
 #test_literal = "I owe you two hundred twenty two dollars"
 #print(most_vowel_at_end(test_literal))
 
+
 def build_readable_string(literal): # Number 23
     temp_literal = literal.strip().lower() + "."
     new_literal = temp_literal[0].upper() + temp_literal[1:]
@@ -286,6 +300,7 @@ def build_readable_string(literal): # Number 23
 #test_literal = "  hEllo worlD iN Python  "
 #print(build_readable_string(test_literal))
 
+
 def check_sequence(num_list): # Number 24
     init_list = num_list.copy()
     num_list.sort()
@@ -293,9 +308,6 @@ def check_sequence(num_list): # Number 24
         return True
     else:
         return False
-    return num_list
-    #print(init_list)
-    #print(num_list)
 #Test Output
 #number_list = [1,2,3,4,5]
 #print(check_sequence(number_list))
