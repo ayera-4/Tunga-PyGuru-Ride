@@ -1,6 +1,5 @@
 def print_number(): #Number 1
-    print(5)
-    print(100)
+    print(f"{5}\n{100}")
 
 #for i in range(2):
 #    print_number()
@@ -35,7 +34,20 @@ def full_name(first_name, last_name): #Number 4
 #full_name(first, last)
 
 
-#def check_prime(num): #Number 5
+def check_prime(num): #Number 5
+    count = 0
+    for i in range(1, num+1):
+        if num % i == 0:
+            count += 1
+    if num > 1 and count < 3:
+        print("Prime Number")
+    else:
+        print("Not Prime Number")
+
+#number = int(input("Enter integer input: "))
+#check_prime(number)
+
+
 
 
 def calculate_pow(arg1): #Number 6
@@ -46,8 +58,7 @@ def calculate_pow(arg1): #Number 6
 
 
 def display_info(name, location): #Number 7
-    print(name)
-    print(location)
+    print(f"{name}\n{location}")
 #country = input("Enter country of location: ")
 #display_info(name="Magnus",location=country)
 
@@ -71,3 +82,18 @@ def compute_area(radius, pi): #Number 9
 #compute_area(circle_rad, circle_pi)
 
 
+def call_me(a=5, b=10): #Number 10
+    print(f"{a}\n{b}")
+
+#n = int(input("Enter an integer: "))
+#call_me(n)
+
+
+def print_items(*arg): #Number 11
+    for item in arg:
+        print(item)
+
+#text1 = input("Enter string 1: ")
+#text2 = input("Enter string 2: ")
+#print_items(text1)
+#print_items(text1, text2)
