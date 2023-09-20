@@ -122,7 +122,7 @@ def replace_yt(literal): #Number 12
 #print(replace_yt(ch))
 
 
-def concatenate_strings(literal1, literal2):
+def concatenate_strings(literal1, literal2): #Number 13
     result = literal1 + literal2
     return result
 #string1 = input("Enter first string")
